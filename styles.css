@@ -1,0 +1,286 @@
+body {
+    background-color: #FFF1C8;
+  }
+body, html {
+  height: 100%; /* Garante que o body e html ocupem toda a altura da tela */
+  margin: 0;
+ }
+
+#mypussy{
+  display: flex;
+  flex-direction: column;
+}
+
+#content{
+  display: flex;
+  margin-top: -100px;
+}
+
+.logoig{
+    position: absolute;
+    left: 30.77px;
+    top: 30px;
+    margin-top: 1px;
+}
+@font-face{
+    font-family: 'Noto-Serif-Display-ExtraCondensed';
+    src: url('NotoSerif_ExtraCondensed-Bold.ttf');
+  }
+
+#ig-agency {
+  color: #000000;
+  text-align: left;
+  font-family: 'Noto-Serif-Display-ExtraCondensed', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 47px;  
+  margin-left: 220px;
+  margin-top: 65px;
+ 
+}
+
+#e-books{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 1000px;
+
+}
+#sobre-nos{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 120px;
+}
+#ent-ctt{
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 110px;
+}
+
+
+h1{
+  width: 600px;
+  height: 200px;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 150%;
+  margin-top: 150px;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  color: #4B0082;
+  margin-left: 42px;
+}
+h2{
+  width: 700px;
+  height: 50;
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-left: 42px;
+  
+}
+#saiba-menos{
+  font-family:  "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  margin-left: 42px;
+  line-height: 22px;
+  color: #4B0082;
+  background-color: #B6D5E1;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.meio-circulo {
+  width: 100%; /* Largura do meio círculo */
+  height: 350px; /* Altura do meio círculo */
+  background-color: #B6D5E1; /* Cor de fundo do meio círculo */
+  border-top-left-radius: 100%; /* Arredonda a parte superior esquerda */
+  border-top-right-radius: 100%; /* Arredonda a parte superior direita */
+  position: absolute;
+  bottom: 0; /* Posiciona a div na parte inferior da página */
+  left: 50%; /* Alinha horizontalmente no meio da página */
+  transform: translateX(-50%); /* Ajusta o meio círculo para ficar centralizado */
+  z-index: 2;
+}
+.imagem-emergente {
+  background-size: cover; /* Garante que a imagem cubra toda a área do contêiner */
+  background-position: center; /* Centraliza a imagem dentro do contêiner */
+  opacity: 0; /* Começa com a imagem invisível */
+  margin-left: 1200px;
+  margin-top: -450px;
+  object-fit: cover;
+  position: absolute; 
+  z-index: 1;
+  transition: opacity 2s ease-in-out; /* Animação de opacidade suave */
+}
+
+/* Quando a página for carregada, a imagem vai emergir */
+body.loaded .imagem-emergente {
+  opacity: 1; /* A imagem vai ficar visível */
+}
+
+/* Opcional: Usando uma animação de fade-in para quando a página carregar */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Começa invisível */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+  }
+}
+
+.imagem-emergente {
+  animation: fadeIn 3s ease-in-out forwards 1s; /* Animação do fade-in */
+}
+.container {
+  position: relative; /* Necessário para o posicionamento absoluto dentro do contêiner */
+  width: 100%;
+  height: 100%; /* Ajuste conforme necessário */
+}
+.bola-branca {
+  position: absolute;
+  width: 500px; /* Ajuste o tamanho da bola */
+  height: 500px; /* Ajuste o tamanho da bola */
+  background-color: white; /* Cor da bola */
+  border-radius: 50%; /* Torna a div redonda */
+  top: 100px; /* Ajuste a posição vertical */
+  left: 1420px; /* Ajusta a posição horizontal */
+  transform: translateX(-50%); /* Centraliza a bola horizontalmente */
+  z-index: 0; /* Coloca a bola atrás da imagem */
+  opacity: 0; /* Começa com a bola invisível */
+  animation: fadeBall 1s ease-in-out forwards; /* Animação de fade-in da bola com delay */
+  
+}
+@keyframes fadeBall {
+  0% {
+    opacity: 0; /* Começa invisível */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+  }
+}
+
+.como-funciona{
+  position: absolute;
+  left: 45%;
+  top: 50px;
+
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 29.1438px;
+  line-height: 150%;
+  font-weight: bold;
+  /* identical to box height, or 44px */
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #4B0082;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+}
+.bolinhas {
+  display: flex; /* Alinha as bolinhas lado a lado */
+  justify-content: center; /* Centraliza as bolinhas horizontalmente */
+  left: 32.5%;
+  margin-top: 170px; /* Ajuste a posição das bolinhas na página */
+  position: absolute; 
+  z-index: 3;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+#barrinha{
+  position: absolute;
+  background-color: white;
+  width: 100%; 
+  height: 8%; 
+  display: flex;
+
+}
+
+.logoigmob{
+  position: absolute;
+  margin-top: 1px;
+  width: 80px;
+  height: 60px;
+}
+
+#ig-agencymob{
+  color: #000000;
+  text-align: center;
+  font-family: 'Noto-Serif-Display-ExtraCondensed', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 25px;  
+  margin-top: 14px;
+  margin-left: 38%;
+
+}
+
+.menu{
+  position: absolute;
+  margin-left: 85%;
+  margin-top: 20px;
+}
+#aff{
+  display: block;
+  width: 100%;
+}
+
+#linha-preta {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: 0.2%; /* Espessura da linha */
+  background-color: black; /* Cor da linha */
+  position: absolute;
+  margin-top: 19%;
+}
+
+#aitadoendo{
+  width: 70%;
+  height: 60%;
+  font-family: "Atkinson Hyperlegible";
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 30%;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+  color: #4B0082;
+  margin-left: 5px;
+  margin-top: 24%;
+  
+}
+#gayunidos{
+  width: 70%;
+  height: 60%;
+  font-family: "Atkinson Hyperlegible";
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  margin-top: 30%;
+  letter-spacing: 0.04em;
+  color: black;
+  margin-left: 5px;
+  margin-top: 60%;
+  
+}
